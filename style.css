@@ -1,91 +1,150 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.services-section{
-  background: url(bg.jpg);
-  background-size: cover;
-  padding: 60px 0;
-}
-.inner-width{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.section-title{
-  text-align: center;
-  color: #ddd;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-.border{
-  width: 160px;
-  height: 2px;
-  background: #82ccdd;
-  margin: 40px auto;
-}
-.services-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    background: #fff;
 }
 
-.service-box{
-  max-width: 33.33%;
-  padding: 10px;
-  text-align: center;
-  color: #ddd;
-  cursor: pointer;
+button:focus {
+    outline: none;
 }
 
-.service-icon{
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border: 3px solid #82ccdd;
-  color: #82ccdd;
-  transform: rotate(45deg);
-  margin-bottom: 30px;
-  margin-top: 16px;
-  transition: 0.3s linear;
-}
-.service-icon i{
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
-}
-.service-box:hover .service-icon{
-  background: #82ccdd;
-  color: #ddd;
-}
-.service-title{
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.service-desc{
-  font-size: 14px;
+.wrapper {
+    min-height: 100vh;
+    height: auto;
+    background-image: url('../images/bg.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media screen and (max-width:960px) {
-  .service-box{
-    max-width: 45%;
-  }
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media screen and (max-width:768px) {
-  .service-box{
-    max-width: 50%;
-  }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
 }
 
-@media screen and (max-width:480px) {
-  .service-box{
-    max-width: 100%;
-  }
+.header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header--right .header--menu {
+    margin-right: 20px;
+}
+
+.header--right .header--menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--right .header--menu ul li {
+    list-style-type: none;
+}
+
+.header--right .header--menu ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header--right .header--menu ul li a img {
+    margin-left: 5px;
+    display: block;
+    padding-top: 1px;
+}
+
+.header--right .header-right--button button {
+    background: #14B45C;
+    border-radius: 10px;
+    color: #fff;
+    border: 0;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+/* Main App */
+.about-section {
+    padding: 26px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section--left {
+    margin-right: 70px;
+}
+
+.about-section--left img {
+    max-width: 400px;
+}
+
+.about-section--right {
+    width: 495px;
+}
+
+.about-section--right h1 {
+    color: green;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.about-section--right .desc {
+    font-size: 16px;
+    color: #A1A4AC;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.about-section--right .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.about-section--right .buttons button {
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about-section--right .buttons .download-button {
+    margin-right: 30px;
+    background:  #14B45C;
+    padding: 16px 30px;
+    border-radius: 16px;
+}
+
+.about-section--right .buttons .watch-button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-section--right .buttons .watch-button img {
+    width: 413px;
+    height: 122px;
+    margin-right: 10px;
 }
